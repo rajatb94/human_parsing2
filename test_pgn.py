@@ -10,8 +10,7 @@ import cv2
 from glob import glob
 os.environ["CUDA_VISIBLE_DEVICES"]="0"
 
-import tensorflow.compat.v1 as tf
-tf.disable_v2_behavior()
+import tensorflow as tf
 import numpy as np
 from PIL import Image
 from utils import *
