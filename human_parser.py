@@ -13,7 +13,8 @@ from matplotlib import pyplot as plt
 os.environ["CUDA_VISIBLE_DEVICES"]="0"
 
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import numpy as np
 from PIL import Image
 from human_parsing2.utils import *

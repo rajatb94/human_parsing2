@@ -4,7 +4,8 @@
 # the slim library (https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/slim).
 
 from human_parsing2.kaffe.tensorflow import Network
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 class PGNModel(Network):
     def setup(self, is_training, n_classes, keep_prob):
