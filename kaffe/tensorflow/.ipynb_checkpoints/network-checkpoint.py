@@ -1,7 +1,7 @@
 import numpy as np
 import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
-slim = tf.contrib.slim
+import tf_slim as slim
 
 DEFAULT_PADDING = 'SAME'
 
