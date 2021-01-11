@@ -10,7 +10,7 @@ import cv2
 from glob import glob
 import imutils
 from matplotlib import pyplot as plt
-os.environ["CUDA_VISIBLE_DEVICES"]="0"
+os.environ["CUDA_VISIBLE_DEVICES"]="-1"
 
 
 import tensorflow.compat.v1 as tf
